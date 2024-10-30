@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Programmer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="/api/placeholder/180/180" alt="Profil Roberto Novempber Ramadhan" class="profile-img">
+            <h1>Roberto Novempber Ramadhan</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p>Halo! Nama saya Roberto Novempber Ramadhan, seorang pengembang Full Stack dengan keahlian dalam teknologi frontend seperti HTML, CSS, dan JavaScript, serta backend dengan PHP dan MySQL. Saya memiliki latar belakang pendidikan di Teknik Otomasi dari SMKN 1 Batam, dan saat ini sedang melanjutkan studi di Teknik Informatika. Saya bersemangat untuk terus berkembang dan berinovasi di bidang pengembangan web, menciptakan aplikasi yang fungsional dan estetik untuk meningkatkan pengalaman pengguna.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-php fa-3x"></i>
+                    <h3>PHP</h3>
+                    <p>Backend Development</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <h3>HTML</h3>
+                    <p>Struktur Web Modern</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <h3>CSS</h3>
+                    <p>Desain Responsif</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js fa-3x"></i>
+                    <h3>JavaScript</h3>
+                    <p>Frontend Interaktif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img"></div>
+                    <div class="project-info">
+                        <h3>Pembuatan Web Kuliner</h3>
+                        <p>Proyek "Kuliner Enak Jawa Timur" (KEJT) adalah sebuah aplikasi web yang menghadirkan pengalaman interaktif untuk mengenal lebih dalam ragam kuliner khas Jawa Timur. Di halaman utama, pengguna disambut dengan video latar belakang yang menarik untuk memberi kesan visual tentang kelezatan kuliner daerah ini. Navigasi yang intuitif memungkinkan akses mudah ke halaman-halaman utama seperti beranda, kuliner, tentang kami, dan kontak. Pengguna dapat membuat akun melalui sistem autentikasi untuk dapat memberikan penilaian serta ulasan pada hidangan favorit mereka, sementara fitur pencarian dan filter membantu dalam menemukan makanan sesuai kategori atau preferensi tertentu. Sistem penilaian dan ulasan ini memungkinkan pengguna untuk berbagi pengalaman kuliner dan membantu pengguna lain dalam membuat pilihan. Pengelolaan konten, ulasan pengguna, dan statistik dilakukan melalui dashboard admin. Proyek ini menggunakan teknologi frontend HTML, CSS, dan JavaScript, backend PHP, serta MySQL untuk database.</p>
+                        <a href="#">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <form class="contact-form" method="POST" action="form_handler.php">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
